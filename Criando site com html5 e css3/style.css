@@ -1,37 +1,66 @@
 body{
-  background: #ccc;
+  background: #f7f7f7;
+  font-family: Verdana;
+  max-width: 56.25rem;
+  margin: auto; /*centraliza todo o conteudo */
 }
 
 #title, .subtitle, .post_title{
-  color: blue;
+  color: #000;
+}
+
+#title{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: line-through;
+  color: #505050;
 }
 
 .post_title{
   font-size: 1rem;
   font-style: italic;
-  margin: 0 0 0.93rem 0;
+  margin: 0;
+  margin-bottom: 0.93rem;
 }
 
 .post{
-  background: #505050; 
+  background: #fff; 
   padding: 0.93rem; /*15px*/
-  border: 0.12rem solid #000;      /*2px ajustado de acordo com o exercício*/
+  border: 0.12rem solid #505050;      /*2px ajustado de acordo com o exercício*/
   border-radius: 5px; /*Posso colocar em rem? */
-  margin: 0.62rem 0 0.93rem 0; /*15px na margem inferior*/
+  margin-bottom: 0.93rem; /*15px na margem inferior*/
 }
 
 .conteudo{
-  margin: 0.93rem 0 0 0; /*Margem sup de 15px para o conteudo, paragrafo p */
+  margin: 0; 
+  margin-bottom: 0.93rem; /*Margem inf. de 15px para o conteudo, paragrafo p */
+  text-transform: capitalize;
+  text-align: justify;
 }
 
 /*Ajustei a foto por conta própria*/
 .minha_foto{
   width: 15%;
   height: 15%;
+  border-radius: 50%;
+  border: 0.5rem solid #505050;
 }
 
 .img_code{
   border-radius: 5px;
-  width: 50%;
-  height: 80%;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 0.93rem; /*15px*/
+}
+
+.contacts_list{
+  list-style-type: none;
+  padding-left: 0.93rem;
+}
+
+.contacts_list li a{
+  text-decoration: none;
 }
